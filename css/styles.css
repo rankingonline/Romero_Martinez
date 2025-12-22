@@ -469,9 +469,77 @@ img {
 
 .ps-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-3xl);
+    grid-template-columns: 1fr auto 1fr;
+    gap: var(--spacing-lg);
     align-items: start;
+}
+
+.ps-connector {
+    display: flex;
+    justify-content: center;
+    padding-top: 170px;
+    /* Align with cards (header height + margin) */
+}
+
+.connector-arrows {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.connector-arrow-item {
+    height: 180px;
+    /* Match card min-height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+}
+
+.connector-arrow-item i {
+    width: 48px;
+    height: 48px;
+    background-color: var(--color-white);
+    color: var(--color-secondary-accent);
+    border: 2px solid var(--color-secondary-accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-normal);
+    font-size: 20px;
+}
+
+/* Hover Effects for Individual Rows (Card <-> Arrow Connection) */
+/* Row 1 */
+.connector-arrow-item:nth-child(1):hover i,
+.ps-grid:has(.ps-column:first-child .problem-card:nth-child(1):hover) .connector-arrow-item:nth-child(1) i,
+.ps-grid:has(.ps-column:last-child .solution-card:nth-child(1):hover) .connector-arrow-item:nth-child(1) i {
+    background-color: var(--color-secondary-accent);
+    color: var(--color-white);
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(235, 110, 8, 0.4);
+}
+
+/* Row 2 */
+.connector-arrow-item:nth-child(2):hover i,
+.ps-grid:has(.ps-column:first-child .problem-card:nth-child(2):hover) .connector-arrow-item:nth-child(2) i,
+.ps-grid:has(.ps-column:last-child .solution-card:nth-child(2):hover) .connector-arrow-item:nth-child(2) i {
+    background-color: var(--color-secondary-accent);
+    color: var(--color-white);
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(235, 110, 8, 0.4);
+}
+
+/* Row 3 */
+.connector-arrow-item:nth-child(3):hover i,
+.ps-grid:has(.ps-column:first-child .problem-card:nth-child(3):hover) .connector-arrow-item:nth-child(3) i,
+.ps-grid:has(.ps-column:last-child .solution-card:nth-child(3):hover) .connector-arrow-item:nth-child(3) i {
+    background-color: var(--color-secondary-accent);
+    color: var(--color-white);
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(235, 110, 8, 0.4);
 }
 
 .ps-column {
@@ -518,6 +586,10 @@ img {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: all var(--transition-normal);
     text-align: center;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .problem-card:hover {
@@ -546,6 +618,10 @@ img {
     box-shadow: 0 6px 16px rgba(38, 64, 145, 0.25);
     transition: all var(--transition-normal);
     text-align: center;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .solution-card:hover {
@@ -1675,7 +1751,23 @@ img {
     /* Problems & Solutions Tablet */
     .ps-grid {
         grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .ps-connector {
+        padding-top: 0;
+        margin: var(--spacing-md) 0;
+    }
+
+    .connector-arrows {
+        flex-direction: row;
         gap: var(--spacing-xl);
+    }
+
+    .connector-arrow-item {
+        height: auto;
+        width: auto;
+        transform: rotate(90deg);
     }
 
     .ps-title {
