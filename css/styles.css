@@ -275,6 +275,7 @@ img {
     display: flex;
     align-items: center;
     flex-shrink: 0;
+    gap: var(--spacing-md);
 }
 
 .btn-portal {
@@ -300,6 +301,32 @@ img {
 
 .btn-portal i {
     font-size: 18px;
+}
+
+/* WhatsApp Button */
+.btn-whatsapp {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background-color: #25D366;
+    color: var(--color-white);
+    border: 2px solid #25D366;
+    border-radius: var(--radius-md);
+    font-weight: var(--font-weight-semibold);
+    transition: all var(--transition-fast);
+    white-space: nowrap;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E;
+    border-color: #128C7E;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-whatsapp i {
+    font-size: 20px;
 }
 
 /* Mobile Menu Toggle */
@@ -1825,6 +1852,32 @@ img {
         width: 100%;
         text-align: center;
     }
+
+    /* WhatsApp Mobile Circle Button */
+    .btn-whatsapp {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        border-radius: 50%;
+        justify-content: center;
+        background-color: transparent;
+        color: #25D366;
+        border: 2px solid #25D366;
+        margin-left: auto;
+    }
+
+    .btn-whatsapp .btn-text {
+        display: none;
+    }
+
+    .btn-whatsapp i {
+        font-size: 20px;
+    }
+
+    .btn-whatsapp:hover {
+        background-color: #25D366;
+        color: var(--color-white);
+    }
 }
 
 /* Small Mobile */
@@ -1843,4 +1896,6 @@ img {
         width: 100%;
         justify-content: center;
     }
+
+
 }
