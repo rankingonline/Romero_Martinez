@@ -672,7 +672,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-3xl);
-    align-items: center;
+    align-items: stretch;
     margin-bottom: var(--spacing-3xl);
 }
 
@@ -687,7 +687,7 @@ img {
     font-size: 1rem;
     font-weight: var(--font-weight-semibold);
     color: var(--color-secondary-accent);
-    text-transform: lowercase;
+    /* text-transform: lowercase; Removed to allow Sentence case */
     letter-spacing: 0.5px;
 }
 
@@ -706,14 +706,17 @@ img {
 }
 
 .sa-header-image {
-    display: flex;
-    align-items: flex-end;
-    height: 100%;
+    display: block;
+    position: relative;
+    width: 100%;
 }
 
 .sa-support-img-real {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 70%;
+    height: 100%;
     object-fit: cover;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
@@ -1866,6 +1869,15 @@ img {
 
     .sa-title {
         font-size: 2rem;
+    }
+
+    .sa-header-image {
+        margin-top: var(--spacing-md);
+    }
+
+    .sa-support-img-real {
+        position: static;
+        height: 300px;
     }
 
     .sa-cards-grid {
