@@ -607,16 +607,15 @@ img {
 }
 
 .problem-title {
-    font-size: 1.5rem;
-    font-weight: var(--font-weight-bold);
+    font-size: 1.2rem;
+    font-weight: var(--font-weight-normal);
     color: var(--color-dark);
-    margin-bottom: 4px;
 }
 
 .problem-description {
-    font-size: 1rem;
-    color: var(--color-text);
-    line-height: 1.5;
+    font-size: 1.2rem;
+    color: var(--color-dark);
+    line-height: 1;
 }
 
 /* Solution Cards (Primary Blue) */
@@ -640,17 +639,16 @@ img {
 }
 
 .solution-title {
-    font-size: 1.5rem;
-    font-weight: var(--font-weight-bold);
+    font-size: 1.2rem;
+    font-weight: var(--font-weight-normal);
     color: var(--color-white);
-    margin-bottom: 4px;
 }
 
 .solution-description {
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     color: var(--color-white);
     opacity: 0.95;
-    line-height: 1.5;
+    line-height: 1;
 }
 
 /* ==========================================
@@ -784,12 +782,12 @@ img {
 
 /* Empresa Card (Orange) */
 .sa-card-empresa {
-    background-color: var(--color-secondary-accent);
+    background: linear-gradient(to bottom, #8d4205, #ff852e);
     color: var(--color-white);
 }
 
 .sa-card-empresa::after {
-    background-image: url('../assets/bg/bg-empresas.png');
+    background-image: url('../assets/bg/bg-empresas-people.jpg');
 }
 
 .sa-card-empresa:hover {
@@ -798,7 +796,7 @@ img {
 
 /* Autonomo Card (Primary Blue) */
 .sa-card-autonomo {
-    background-color: var(--color-primary);
+    background: linear-gradient(to bottom, #071d5e, #3c59af);
     color: var(--color-white);
 }
 
