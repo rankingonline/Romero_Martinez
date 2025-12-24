@@ -91,9 +91,9 @@ img {
    Container
    ========================================== */
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 var(--spacing-lg);
+    padding: 0 var(--spacing-md);
 }
 
 /* ==========================================
@@ -193,7 +193,7 @@ img {
 }
 
 .logo-img {
-    height: 56px;
+    height: 80px;
     width: auto;
 }
 
@@ -606,7 +606,7 @@ img {
 .problem-title {
     font-size: 1.5rem;
     font-weight: var(--font-weight-bold);
-    color: var(--color-secondary-accent);
+    color: var(--color-dark);
     margin-bottom: 4px;
 }
 
@@ -1595,7 +1595,7 @@ img {
 }
 
 .footer-logo {
-    width: 80px;
+    width: 256px;
     height: auto;
     margin-bottom: var(--spacing-sm);
 }
