@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Plantillas de email · Romero Martínez Asesores</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root { --navy:#04113A; --azul:#264091; --naranja:#EB6E08; --texto:#4C5263; --claro:#F5F9FF; --linea:#e1e7f5; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--claro); font-family:'Inter',-apple-system,"Segoe UI",Arial,sans-serif; color:var(--texto); }
+  .wrap { max-width:760px; margin:0 auto; padding:0 22px 60px; }
+  header { background:var(--navy); margin-bottom:34px; }
+  header .inner { max-width:760px; margin:0 auto; padding:34px 22px 38px; }
+  .eyebrow { font-size:10px; font-weight:700; color:var(--naranja); letter-spacing:1.6px; text-transform:uppercase; margin-bottom:14px; }
+  h1 { margin:0 0 12px; font-size:28px; font-weight:400; line-height:1.25; color:#fff; }
+  h1 strong { font-weight:700; }
+  header p { margin:0; font-size:15px; color:#b9c4e0; line-height:1.6; }
+  .card { display:flex; align-items:center; gap:18px; background:#fff; border:1px solid var(--linea);
+          border-top:3px solid var(--azul); border-radius:10px; padding:20px 22px; margin-bottom:14px; text-decoration:none; }
+  .card:nth-of-type(2) { border-top-color:var(--naranja); }
+  .card:nth-of-type(3) { border-top-color:var(--navy); }
+  .num { font-size:34px; font-weight:800; color:var(--azul); letter-spacing:-1px; line-height:1; min-width:52px; }
+  .card:nth-of-type(2) .num { color:var(--naranja); }
+  .card:nth-of-type(3) .num { color:var(--navy); }
+  .txt { flex:1; display:block; }
+  .label { display:block; font-size:9px; font-weight:700; color:var(--azul); letter-spacing:1.1px; text-transform:uppercase; margin-bottom:3px; }
+  .asunto { display:block; font-size:15px; font-weight:700; color:var(--navy); line-height:1.35; margin-bottom:10px; }
+  .pre { display:block; font-size:13px; color:#6b7285; line-height:1.5; }
+  .go { font-size:12px; font-weight:700; color:#fff; background:var(--naranja); border-radius:6px; padding:10px 16px; white-space:nowrap; }
+  .nota { background:#fff; border-left:3px solid var(--naranja); border-radius:0 8px 8px 0; padding:18px 20px; font-size:13px; line-height:1.7; margin-top:26px; }
+  .nota strong { color:var(--navy); }
+  @media (max-width:600px) {
+    .card { flex-wrap:wrap; }
+    .num { min-width:auto; }
+    .go { width:100%; text-align:center; }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <div class="eyebrow">Romero Martínez Asesores</div>
+      <h1>Plantillas de <strong>email marketing</strong></h1>
+      <p>Serie de tres campañas para clientes. Vista previa con datos de muestra.</p>
+    </div>
+  </header>
+  <div class="wrap">
+      <a class="card" href="web-nueva.html">
+        <span class="num">01</span>
+        <span class="txt">
+          <span class="label">Asunto</span>
+          <span class="asunto">Tenemos web nueva (y queremos que la conozcas)</span>
+          <span class="label">Preheader</span>
+          <span class="pre">Más clara, más rápida, hecha para que encuentres lo que necesitas.</span>
+        </span>
+        <span class="go">Ver plantilla &rsaquo;</span>
+      </a>
+      <a class="card" href="academia.html">
+        <span class="num">02</span>
+        <span class="txt">
+          <span class="label">Asunto</span>
+          <span class="asunto">Academia Romero Martínez: recursos útiles para ti</span>
+          <span class="label">Preheader</span>
+          <span class="pre">Tutoriales pensados para clientes de Romero Martínez Asesores.</span>
+        </span>
+        <span class="go">Ver plantilla &rsaquo;</span>
+      </a>
+      <a class="card" href="por-si-se-te-paso.html">
+        <span class="num">03</span>
+        <span class="txt">
+          <span class="label">Asunto</span>
+          <span class="asunto">Por si se te pasó: nuestra nueva web</span>
+          <span class="label">Preheader</span>
+          <span class="pre">Un minuto para verla, cero compromiso.</span>
+        </span>
+        <span class="go">Ver plantilla &rsaquo;</span>
+      </a>
+    <div class="nota">
+      <strong>Son vistas previa, no los emails reales.</strong> El saludo aparece como «Hola, María,» a modo de
+      ejemplo: en el envío, Mailchimp lo sustituye por el nombre de cada contacto. La dirección postal y los enlaces
+      de baja también los completa Mailchimp automáticamente.
+    </div>
+  </div>
+</body>
+</html>
